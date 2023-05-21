@@ -315,7 +315,6 @@ header img {
 }
 .plans-cards--container {
     display: flex;
-    justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 360px;
