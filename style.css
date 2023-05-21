@@ -318,6 +318,7 @@ header img {
     width: 100%;
     min-width: 320px;
     height: 360px;
+    padding: 0 50px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
