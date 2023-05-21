@@ -1,0 +1,15 @@
+.main-class-container--img  {
+    height: 80vh;
+}
+.class-detail--container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+}
+.class-detail--card {
+    margin-bottom: 60px;
+}
+footer {
+    padding: 0 100px;
+}

@@ -1,0 +1,448 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/img/header-back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    min-width: 100px;
+    max-width: 300px;
+    margin-top: 70px;
+}
+.header--title-container {
+    width: 80%;
+    min-width: 288px;
+    max-width: 800px;
+    height: 180px;
+    margin: 30px 0;
+    text-align: center;
+}
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: #fffffd;
+}
+.header--title-container p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #c6d6fb;
+    margin-top: 20px;
+}
+.header--button {
+    position: absolute;
+    bottom: -24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 48px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    border-radius: 6px;
+    background-color: #ebebeb;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16)
+}
+.header--button span {
+    width: 12px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icono/down-arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.main-class-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+}
+.main-class-container--img  {
+    width: 100%;
+    height: 400px;
+    max-height: 800px;
+    background-image: url('./assets/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+}
+.main-class-container--info {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 0 20px;
+}
+.main-class-container--info h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin-bottom: 30px;
+}
+.main-class-container--info p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 40px;
+    color: #757575;
+}
+.main-class-container--cards {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.main-class-container--cards h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: #2962f1;
+    margin: 0 0 30px 30px;
+}
+.cards-container {
+    display: flex;
+    column-gap: 50px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 40px;
+}
+.cards-container .card {
+    scroll-snap-align: center;
+    width: 240px;
+    max-width: 380px;
+    height: 300px;
+    max-height: 440px;
+    background-color: white;
+    margin: 0 auto 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    padding: 30px 20px;
+    text-align: center;
+}
+.card--title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-bottom: 14px;
+    color: #fa8736;
+}
+.card--img {
+    width: 180px;
+    height: 150px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 14px;
+}
+.card--img-basico {
+    background-image: url('./assets/img/obediencia-basica.svg');
+}
+.card--img-avanzado {
+    background-image: url('./assets/img/obediencia-avanzada.svg');
+}
+.card--img-conducta {
+    background-image: url('./assets/img/correccion-conducta.svg');
+}
+.card--img-deporte {
+    background-image: url('./assets/img/deporte.svg');
+}
+.card--info {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+
+
+
+.main-class-detail {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 60px 20px;
+    background-color: #3044cb;
+}
+.class-detail--title {
+    width: 100%;
+    height: auto;
+    margin: 20px 0 60px;
+    text-align: center;
+}
+.class-detail--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: white;
+    margin-bottom: 20px;
+}
+.class-detail--title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #c6d6fb;
+}
+.class-detail--container {
+    width: 100%;
+    height: auto;
+}
+.class-detail--card {
+    width: 100%;
+    min-width: 280px;
+    max-width: 380px;
+    height: 140px;
+    max-height: 260px;
+    background-image: url('./assets/img/detail-card-back2-svg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 14px;
+    margin: 0 auto 14px;
+    border-radius: 8px;
+}
+.card--icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.card--icon.card--icon-reloj {
+    background-image: url(./assets/icono/clock.svg);
+}
+.card--icon.card--icon-eye {
+    background-image: url(./assets/icono/eye.svg);
+}
+.card--icon.card--icon-dollar {
+    background-image: url(./assets/icono/dollar-sign.svg);
+}
+.card--icon.card--icon-check {
+    background-image: url(./assets/icono/check-circle.svg);
+}
+.class-detail--card h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.class-detail--card p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #c6d6fb;
+}
+
+
+
+
+
+.marcando-huellas-img-container {
+    width: 100%;
+    min-width: 320px;
+    height: 60vh;
+    background-image: url('./assets/img/hi-five.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.marcando-huellas-img-container h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: white;
+    padding-top: 40px;
+}
+
+
+
+.main-plans--container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 60px 0;
+}
+.main-plans--title {
+    width: 90%;
+    min-width: 280px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.main-plans--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    margin-bottom: 28px;
+}
+.main-plans--title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin-bottom: 40px;
+}
+.plans-cards--container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 360px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.card--container {
+    position: relative;
+    scroll-snap-align: center;
+    width: 240px;
+    min-width: 220px;
+    max-width: 280px;
+    height: 250px;
+    background-color: white;
+    border-radius: 14px;
+    margin: 50px 50px 0;
+    text-align: center;
+    padding: 0 14px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.card--container__color {
+    background-color: #2962f1;
+    color: white;
+}
+.card--container__color .card-plans--title {
+    background-color: #fa8736;
+}
+.card--container__color .card-plans--text {
+    color: #c6d6fb;
+}
+.card--container__color .card-plans--button {
+    color: white;
+}
+.card-plans--title {
+    position: absolute;
+    width: 140px;
+    height: 30px;
+    top: -15px;
+    left: calc(50% - 70px);
+    background-color: #2962f1;
+    color: white;
+    border-radius: 14px;
+    padding: 6px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+.card-plans--info h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-top: 30px;
+}
+.card-plans--price {
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5.2rem;
+    margin-top: 16px;
+}
+.card-plans--price span {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    vertical-align: top;
+}
+.card-plans--text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    color: #757575;
+    margin-top: 14px;
+}
+.card-plans--button {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    margin-top: 14px;
+    font-family: 'DM Sans', sans-serif;
+    background: none;
+    border: 2px solid #fa8736;
+}
+
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 160px;
+    background-color: #000945;
+    padding: 0 30px;
+}
+.social-media--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 60%;
+}
+.social-media--container p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+.social-media--container p .fa-brands {
+    color: #fa8736;
+    margin-right: 4px;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.6rem;
+}
+.logotipo {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 50%;
+    height: 60%;
+}
+.logotipo span {
+    width: 80px;
+    height: 80px;
+    background-image: url('./assets/icono/logo.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
